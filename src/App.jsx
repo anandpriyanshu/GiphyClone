@@ -8,6 +8,7 @@ import Search from './pages/search'
 import GifPage from './pages/single-gif'
 import Favorite from './pages/favorite'
 import Home from './pages/home'
+import GifProvider from './context/gif-context'
 
 function App() {
 
@@ -43,8 +44,11 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={router} />
+      <GifProvider>      {/*now whole app has accesse the date whatever GifContext send the data to us */}
 
+        <RouterProvider router={router} />
+
+      </GifProvider>
 
     </>
   )
