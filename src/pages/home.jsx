@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { GifState } from '../context/gif-context'
 import Gif from '../components/gif'
+import FilterGif from '../components/filter-gif'
 
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
                 className='w-full mt-5'
             />
             {/* FilterGif */}
+            <FilterGif showTrending />
 
 
             <div className='columns-2 md:col-span-3 lg:columns-4 xl:columns-5 gap-2'>
