@@ -8,3 +8,11 @@
         @apply bg-gradient-to-r from-teal-600 via-blue-400 to-pink-500
     }
 }
+
+.faded-text {
+    @apply font-bold text-sm text-gray-600
+}
+
+.divider {
+    @apply w-full h-0.5 my-6 bg-gray-400
+}
